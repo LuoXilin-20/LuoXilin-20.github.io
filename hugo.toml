@@ -1,4 +1,42 @@
 baseURL = 'https://luoxilin-20.github.io/'
-languageCode = 'en-us'
-title = 'My New Hugo Project'
+languageCode = 'zh-cn'
+title = '燃烧女子的房间'
 theme = "PaperMod"
+
+[params]
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+
+  [params.homeInfoParams]
+    Title = "燃烧女子的房间"
+    Content = "欢迎来到我的博客"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/LuoXilin-20"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "文章"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "archives"
+    name = "归档"
+    url = "/archives/"
+    weight = 20
+  [[menu.main]]
+    identifier = "search"
+    name = "搜索"
+    url = "/search/"
+    weight = 30
