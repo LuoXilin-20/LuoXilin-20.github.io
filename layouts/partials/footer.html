@@ -1,5 +1,5 @@
-    <!-- Add total page and word count time -->
-    <section class="totalcount">
+<footer class="footer">
+    <section class="totalcount" style="text-align: center; color: #888; font-size: 0.85em; padding: 10px 0;">
         {{$scratch := newScratch}}
         {{ range (where .Site.Pages "Kind" "page" )}}
         {{$scratch.Add "total" .WordCount}}
@@ -9,7 +9,33 @@
         {{ $remainingThousands := mod (div $totalWords 1000) 10 }}
 
         发表了{{ len (where .Site.RegularPages "Section" "post") }}篇文章 ·
-        总计{{ $tenThousands }}万{{ $remainingThousands }}千字
-        <br>
-
+        总计{{ $tenThousands }}万{{ $remainingThousands }}千字 ·
+        已运行<span id="runningdays">计算中...</span>
     </section>
+</footer>
+
+<script>
+ let s1 = '2026-3-10'; //website start date
+ s1 = new Date(s1.replace(/-/g, "/"));
+ let s2 = new Date();
+
+ // Calculate the difference
+ let years = s2.getFullYear() - s1.getFullYear();
+ let months = s2.getMonth() - s1.getMonth();
+ let days = s2.getDate() - s1.getDate();
+
+ // Adjust months and years if necessary
+ if (days < 0) {
+   months -= 1;
+   let prevMonth = new Date(s2.getFullYear(), s2.getMonth(), 0);
+   days += prevMonth.getDate();
+ }
+ if (months < 0) {
+   years -= 1;
+   months += 12;
+ }
+
+ // Format the result
+ let result = `${years}年${months}月${days}天`;
+ document.getElementById('runningdays').innerHTML = result;
+</script>
