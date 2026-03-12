@@ -12,6 +12,8 @@ theme = "PaperMod"
   ShowCodeCopyButtons = true
   ShowRssButtonInSectionTermList = true
   UseHugoToc = true
+  ShowToc = true
+  TocOpen = true
 
   [params.homeInfoParams]
     Title = "列巴出颅꒷🥖. 𖦹˙"
