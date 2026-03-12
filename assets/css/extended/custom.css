@@ -1,0 +1,12 @@
+/* 缩小文章内标题字号 */
+.post-content h2 {
+    font-size: 1.4em;
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+}
+
+.post-content h3 {
+    font-size: 1.15em;
+    margin-top: 1.2em;
+    margin-bottom: 0.6em;
+}
