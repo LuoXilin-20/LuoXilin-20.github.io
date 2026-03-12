@@ -5,13 +5,13 @@ draft: false
 layout: "about"
 ---
 
-## 关于我
 
-你好，欢迎来到我的博客「列巴出颅꒷🥖. 𖦹˙」
+你好，欢迎来到「列巴出颅꒷🥖. 𖦹˙」
 
 这里是关于我的一些介绍...
 
 
-## 联系方式
+## 如果你想找到我🍞
 
-- GitHub: [@LuoXilin-20](https://github.com/LuoXilin-20)
+- [GitHub](https://github.com/LuoXilin-20)
+- luoxilin9@gmail.com
