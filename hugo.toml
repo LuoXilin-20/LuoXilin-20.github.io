@@ -14,7 +14,7 @@ theme = "PaperMod"
   UseHugoToc = true
 
   [params.homeInfoParams]
-    Title = "列巴出颅巴出颅꒷🥖. 𖦹˙"
+    Title = "列巴出颅꒷🥖. 𖦹˙"
     Content = "欢迎来到我的博客"
 
   [[params.socialIcons]]
