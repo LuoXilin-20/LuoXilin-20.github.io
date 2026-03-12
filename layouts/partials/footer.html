@@ -6,11 +6,11 @@
             {{ $scratch.Add "total" (len $content) }}
         {{ end }}
         {{ $totalWords := $scratch.Get "total" }}
-        {{ $tenThousands := div $totalWords 10000.0 }}
-        {{ $remainingThousands := mod (div $totalWords 1000.0) 10 }}
+        {{ $tenThousands := div $totalWords 10000 }}
+        {{ $remainingThousands := div (mod $totalWords 10000) 1000 }}
 
         发表了{{ len .Site.RegularPages }}篇文章 ·
-        总计{{ printf "%.0f" $tenThousands }}万{{ printf "%.0f" $remainingThousands }}千字 ·
+        总计{{ $tenThousands }}万{{ $remainingThousands }}千字 ·
         已运行<span id="runningdays">计算中...</span>
     </section>
 </footer>
