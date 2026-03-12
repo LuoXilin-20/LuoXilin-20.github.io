@@ -15,9 +15,18 @@ theme = "PaperMod"
   ShowToc = true
   TocOpen = true
 
-  [params.homeInfoParams]
-    Title = "列巴出颅꒷🥖. 𖦹˙"
-    Content = "欢迎来到我的博客"
+  # 主题切换按钮
+  disableThemeToggle = false
+
+  # 首页 profile 模式（需要禁用 homeInfoParams 才能显示主题切换按钮）
+  [params.profileMode]
+    enabled = true
+    title = "列巴出颅꒷🥖. 𖦹˙"
+    subtitle = "欢迎来到我的博客"
+    imageUrl = ""
+    imageTitle = ""
+    imageWidth = 120
+    imageHeight = 120
 
   [[params.socialIcons]]
     name = "github"
