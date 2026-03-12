@@ -1,15 +1,16 @@
 <footer class="footer">
     <section class="totalcount" style="text-align: center; color: #888; font-size: 0.85em; padding: 10px 0;">
         {{$scratch := newScratch}}
-        {{ range (where .Site.Pages "Kind" "page" )}}
-        {{$scratch.Add "total" .WordCount}}
+        {{ range .Site.RegularPages }}
+            {{ $content := .Plain }}
+            {{ $scratch.Add "total" (len $content) }}
         {{ end }}
         {{ $totalWords := $scratch.Get "total" }}
-        {{ $tenThousands := div $totalWords 10000 }}
-        {{ $remainingThousands := mod (div $totalWords 1000) 10 }}
+        {{ $tenThousands := div $totalWords 10000.0 }}
+        {{ $remainingThousands := mod (div $totalWords 1000.0) 10 }}
 
-        发表了{{ len (where .Site.RegularPages "Section" "posts") }}篇文章 ·
-        总计{{ $tenThousands }}万{{ $remainingThousands }}千字 ·
+        发表了{{ len .Site.RegularPages }}篇文章 ·
+        总计{{ printf "%.0f" $tenThousands }}万{{ printf "%.0f" $remainingThousands }}千字 ·
         已运行<span id="runningdays">计算中...</span>
     </section>
 </footer>
