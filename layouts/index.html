@@ -1,0 +1,13 @@
+{{- define "main" }}
+
+<article class="post-single">
+  <header class="post-header">
+    {{- $title := .Title }}
+    <h1 class="post-title">{{ $title }}</h1>
+  </header>
+  <div class="post-content">
+    {{- .Content }}
+  </div>
+</article>
+
+{{- end }}
