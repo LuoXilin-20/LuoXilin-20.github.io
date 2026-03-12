@@ -14,4 +14,4 @@ layout: "about"
 ## 如果你想找到我🍞
 
 - [GitHub](https://github.com/LuoXilin-20)
-- luoxilin9@gmail.com
+- luoxl7201@163.com
