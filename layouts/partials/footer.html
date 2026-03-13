@@ -1,6 +1,6 @@
 {{- if not (.Param "hideFooter") }}
 <footer class="footer">
-    <section class="totalcount" style="text-align: center; color: #888; font-size: 0.85em; padding: 10px 0;">
+    <section class="totalcount" style="text-align: center; color: #888; font-size: 1em; padding: 10px 0;">
         {{$scratch := newScratch}}
         {{ range .Site.RegularPages }}
             {{ $content := .Plain }}
@@ -14,7 +14,7 @@
         总计{{ $tenThousands }}万{{ $remainingThousands }}千字 ·
         已运行<span id="runningdays">计算中...</span>
     </section>
-    <section style="text-align: center; color: #888; font-size: 0.85em; padding-bottom: 10px;">
+    <section style="text-align: center; color: #888; font-size: 1em; padding-bottom: 10px;">
         以有涯随无涯，我在乎而且叭叭
     </section>
 
