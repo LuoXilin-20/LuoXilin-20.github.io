@@ -3,9 +3,14 @@ languageCode = 'zh-cn'
 title = '列巴出颅꒷🥖. 𖦹˙'
 theme = "PaperMod"
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [params]
   defaultTheme = "auto"
-  ShowReadingTime = true
+  ShowReadingTime = false
   ShowShareButtons = false
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
