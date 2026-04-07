@@ -1,12 +1,22 @@
-/* 缩小文章内标题字号 */
+/* 基础正文字号 */
+body {
+    font-size: 15px;
+}
+
+/* 文章标题字号 */
+.post-title {
+    font-size: 24px !important;
+}
+
+/* 文章内小标题字号 */
 .post-content h2 {
-    font-size: 1.4em;
+    font-size: 20px;
     margin-top: 1.5em;
     margin-bottom: 0.8em;
 }
 
 .post-content h3 {
-    font-size: 1.15em;
+    font-size: 18px;
     margin-top: 1.2em;
     margin-bottom: 0.6em;
 }
