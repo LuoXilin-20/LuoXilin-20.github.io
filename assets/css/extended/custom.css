@@ -1,3 +1,15 @@
+/* 背景色 */
+:root {
+    --theme: #FFF8F0;
+}
+
+/* 深色模式下保持深色背景 */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --theme: #1a1a1a;
+    }
+}
+
 /* 基础正文字号 */
 body {
     font-size: 15px;
