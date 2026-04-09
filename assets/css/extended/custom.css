@@ -1,18 +1,28 @@
-/* 背景色 */
+/* 背景色 - 覆盖所有页面 */
 :root {
     --theme: #FFF8F0;
 }
 
-/* 深色模式下保持深色背景 */
+html {
+    background: #FFF8F0;
+}
+
+body {
+    background: #FFF8F0;
+    font-size: 15px;
+}
+
+/* 深色模式 */
 @media (prefers-color-scheme: dark) {
     :root {
         --theme: #1a1a1a;
     }
-}
-
-/* 基础正文字号 */
-body {
-    font-size: 15px;
+    html {
+        background: #1a1a1a;
+    }
+    body {
+        background: #1a1a1a;
+    }
 }
 
 /* 文章标题字号 */
